@@ -1,9 +1,14 @@
 ﻿namespace Program;
 
-class Program
+class Input
 {
-    static void Main(string[] args)
+    public Input AND(Input input2)
     {
-        Console.WriteLine("Hello, World!");
+    }
+    public Input OR(Input input2)
+    {
+    }
+    public Input NOT(Input input2)
+    {
     }
 }
