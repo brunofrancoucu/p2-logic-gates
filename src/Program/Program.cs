@@ -1,6 +1,13 @@
-﻿using System.Data;
+﻿namespace LogicGates;
 
-namespace LogicGates;
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World!");
+    }
+}
+
 public class Input
 {
     public bool Bit;

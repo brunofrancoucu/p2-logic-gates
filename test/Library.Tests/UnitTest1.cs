@@ -16,9 +16,9 @@ public class Tests
         Input b = new Input(false);
         Input c = new Input(false);
 
-        a.AND(b).AND(c); // method chaining
+        Input result = a.AND(b).AND(c).NOT(); // method chaining
 
-        Assert.That(a.Bit, Is.EqualTo(true)); // prints: A AND B AND C
+        Assert.That(result.Bit, Is.EqualTo(true)); // prints: A AND B AND C
     }
 
     [Test]
