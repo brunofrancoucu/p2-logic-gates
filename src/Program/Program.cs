@@ -1,23 +1,21 @@
 ﻿namespace Program;
-
-class Input
+public class Input
 {
-    public string Value;
     public bool Bit;
 
-    public Input(String value, bool bit)
+    public Input(bool bit)
     {
-        Value = value;
         Bit = bit;
     }
     public Input AND(Input input2)
     {
+        return new Input(Bit && input2.Bit);
     }
     public Input OR(Input input2)
     {
     }
     public Input NOT()
     {
-        return new Input(Value, !Bit);
+        return new Input(!Bit);
     }
 }
