@@ -26,12 +26,12 @@ public class Tests
     {
         Input input1 = new Input(true);
         Input input2 = new Input(false);
-        Input input3 = new Input(true);
         
         Input resultado = input1.OR(input2);
-        Console.WriteLine(resultado.Bit);
+        Assert.That(resultado.Bit, Is.EqualTo(true));
     }
 
+    [Test]
     public void GarageTests()
     {
         GarageGate opened1 = new GarageGate(false, false, true);

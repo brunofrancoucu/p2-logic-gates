@@ -44,7 +44,6 @@ public class GarageGate
     public bool Evaluate()
     {
         // method chaining
-        return A.AND(B).OR(C.NOT().AND(B.NOT())).AND(C).Bit; 
-
+        return C.AND(B.NOT().AND(A.NOT())).OR(C.AND(B.AND(A))).Bit;
     }
 }
