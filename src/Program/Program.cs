@@ -1,4 +1,6 @@
-﻿namespace LogicGates;
+﻿using System.Data;
+
+namespace LogicGates;
 public class Input
 {
     public bool Bit;
@@ -19,5 +21,23 @@ public class Input
     public Input NOT()
     {
         return new Input(!Bit);
+    }
+}
+
+public class GarageGate
+{
+    private Input A, B, C;
+    public GarageGate(bool a, bool b, bool c)
+    {
+        A = new Input(a);
+        B = new Input(b);
+        C = new Input(c);
+    }
+
+    public bool Evaluate()
+    {
+        // method chaining
+        return A.AND(B).OR(C.NOT().AND(B.NOT())).AND(C).Bit; 
+
     }
 }
