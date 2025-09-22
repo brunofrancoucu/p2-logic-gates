@@ -2,7 +2,7 @@
 
 class Input {
   +value: String
-  +bit: uint1_t
+  +bit: bool
   +AND(input: Input): Input
   +OR(input: Input): Input
   +NOT(): Input
