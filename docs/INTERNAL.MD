@@ -16,3 +16,5 @@ dotnet sln add src/Library/Library.csproj
 dotnet sln add src/Program/Program.csproj
 dotnet sln add test/Library.Tests/Library.Tests.csproj
 ```
+
+[src](https://github.com/ucudal/PII_Comandos/blob/master/Crear_Proyecto_C%23.md)
