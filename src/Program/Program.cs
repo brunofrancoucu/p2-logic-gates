@@ -1,4 +1,4 @@
-﻿namespace Program;
+﻿namespace LogicGates;
 public class Input
 {
     public bool Bit;
@@ -13,6 +13,7 @@ public class Input
     }
     public Input OR(Input input2)
     {
+        return new Input(Bit || input2.Bit);
     }
     public Input NOT()
     {

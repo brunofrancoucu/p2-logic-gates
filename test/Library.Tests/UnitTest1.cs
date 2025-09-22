@@ -1,4 +1,4 @@
-﻿using Program;
+﻿using LogicGates;
 
 namespace Library.Tests;
 
@@ -7,19 +7,18 @@ public class Tests
     [SetUp]
     public void Setup()
     {
+        
     }
 
     [Test]
-    public void Test1()
+    public void Flow1()
     {
-        Program n = new Program();
-        Input a("A");
-        Input b("B");
-        Input c("C");
+        Input a = new Input(true);
+        Input b = new Input(false);
+        Input c = new Input(false);
         
         a.AND(b).AND(c);    // method chaining
-        a.show();           // prints: A AND B AND C
         
-        Assert.Pass();
+        Assert.That(a.Bit, Is.EqualTo(true)); // prints: A AND B AND C
     }
 }
