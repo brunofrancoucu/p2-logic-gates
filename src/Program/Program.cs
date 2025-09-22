@@ -11,9 +11,10 @@ public class Input
     {
         return new Input(Bit && input2.Bit);
     }
-    public Input OR(Input input2)
+    
+    public Input OR(Input input2) // Debo devolver un objeto de tipo Input, lo dice en el método
     {
-        return new Input(Bit || input2.Bit);
+        return new Input(this.Bit || input2.Bit); // bit es true o false
     }
     public Input NOT()
     {
