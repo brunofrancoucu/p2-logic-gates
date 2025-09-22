@@ -1,0 +1,17 @@
+@startuml
+
+class Input {
+  +value: String
+  +bit: uint1_t
+  +AND(input: Input): Input
+  +OR(input: Input): Input
+  +NOT(): Input
+}
+
+' b = new Input("C")
+' c = new Input("B")
+' a = new Input("A")
+
+' a.AND(b).OR(c).NOT().bit
+
+@enduml
